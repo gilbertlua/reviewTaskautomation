@@ -14,4 +14,7 @@ public class SupportFunction extends BaseGeneralFunction{
             
         }
     }
+    public static void WaitPageLoaded(){
+        
+    }
 }
