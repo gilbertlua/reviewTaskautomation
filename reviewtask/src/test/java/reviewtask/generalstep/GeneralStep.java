@@ -17,14 +17,13 @@ public class GeneralStep {
     WebDriverWait driverWait;
     WebDriver _driver = DriverFactory.GetDriver();
 
+    // load review task page
     @When("load to review task page")
     public void load_to_review_task_page() {
-        SupportFunction.TimeDelay(2000);
+        SupportFunction.TimeDelay(1000);
         GeneralAction.ClickMenuBar();
-        SupportFunction.TimeDelay(2000);
+        SupportFunction.TimeDelay(1000);
         GeneralAction.Click("#root > nav > ul > li:nth-child(2)");
-
-
     }
     @Then("the review task page loaded")
     public void the_review_task_page_loaded() {
@@ -53,4 +52,18 @@ public class GeneralStep {
         Boolean check = SoftAssert.StringCompare(expected, actual);
         assertTrue(check);
     }
+
+    // click review button
+    @When("click the review button")
+    public void click_the_review_button() {
+        SupportFunction.TimeDelay(1000);
+        GeneralAction.Click("#fmlx-table--row-0 > td:nth-child(10) > button");
+    }
+    @Then("review button can be clicked and review page is loaded")
+    public void review_button_can_be_clicked_and_review_page_is_loaded() {
+        String actual = GeneralAction.GetValue("#root > div.header > div.title");
+        String expected = "Review Task";   
+        SoftAssert.StringCompare(expected, actual);
+    }
+
 }
