@@ -15,6 +15,7 @@ public class LoginStep {
     WebDriver _driver;
     @Given("Login to page {string} {string}")
     public void login_to_page(String string, String string2) {
+        SupportFunction.WaitElementVisible("#username");
         _driver = DriverFactory.GetDriver();
         GeneralAction.SendKey("#username", string);
         GeneralAction.SendKey("#password", string2);

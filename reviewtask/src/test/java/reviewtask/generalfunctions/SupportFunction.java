@@ -1,5 +1,9 @@
 package reviewtask.generalfunctions;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
 
 public class SupportFunction extends BaseGeneralFunction{
     
@@ -14,7 +18,13 @@ public class SupportFunction extends BaseGeneralFunction{
             
         }
     }
-    public static void WaitPageLoaded(){
-        
+    public static Boolean WaitElementVisible(String element){
+        try {
+            WebDriverWait wait = new WebDriverWait(_driver, java.time.Duration.ofSeconds(20));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(element)));
+            return true;    
+        } catch (Exception e) {
+            return false;
+        }
     }
 }

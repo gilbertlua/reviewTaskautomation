@@ -1,7 +1,10 @@
 package reviewtask.generalfunctions;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebElement;
 
 public class GeneralAction extends BaseGeneralFunction{
     public static void Click(String element){
@@ -36,5 +39,24 @@ public class GeneralAction extends BaseGeneralFunction{
     public static String GetInputValue(String element){
         String value = _driver.findElement(By.cssSelector(element)).getAttribute("value");
         return value;
+    }
+    public static void FillAllQuestionScore(String elements){
+        List<WebElement> list = _driver.findElements(By.cssSelector(elements));
+        for(WebElement element:list){
+            element.click();
+        }
+    }
+    public static void FillAllQuestionEssay(String elements, String Keys){
+        List<WebElement> list = _driver.findElements(By.cssSelector(elements));
+        for(WebElement element:list){
+            element.clear();
+            element.sendKeys(Keys);
+        }
+    }
+    public static void ResetAllQuestion(String elements){
+        List<WebElement> list = _driver.findElements(By.cssSelector(elements));
+        for(WebElement element:list){
+            element.click();
+        }
     }
 }
