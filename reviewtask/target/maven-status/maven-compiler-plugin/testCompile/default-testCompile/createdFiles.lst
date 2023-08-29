@@ -1,15 +1,12 @@
 reviewtask\generalfunctions\SupportFunction.class
 reviewtask\hooks\Hooks.class
+reviewtask\generalstep\review_task\FillQuestion.class
 reviewtask\driverfactory\DriverFactory.class
 reviewtask\generalfunctions\BaseGeneralFunction.class
-reviewtask\generalstep\LoadPage.class
 reviewtask\RunCucumberTest.class
 reviewtask\softassert\SoftAssert.class
 reviewtask\generalstep\SelectPeriod.class
 reviewtask\generalfunctions\GeneralFetch.class
-reviewtask\generalstep\ReviewButton.class
-reviewtask\generalstep\FillQuestion.class
-reviewtask\generalstep\GeneralStep.class
-reviewtask\generalstep\ResetQuestion.class
+reviewtask\generalstep\review_task\LoadPage.class
 reviewtask\generalfunctions\GeneralAction.class
 reviewtask\loginstep\LoginStep.class

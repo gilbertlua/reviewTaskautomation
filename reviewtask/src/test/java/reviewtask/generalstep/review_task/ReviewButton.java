@@ -1,4 +1,4 @@
-package reviewtask.generalstep;
+package reviewtask.generalstep.review_task;
 
 import org.openqa.selenium.WebDriver;
 

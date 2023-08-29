@@ -1,4 +1,4 @@
-package reviewtask.generalstep;
+package reviewtask.generalstep.review_task;
 
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
