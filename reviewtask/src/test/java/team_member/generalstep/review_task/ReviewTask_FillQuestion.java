@@ -1,14 +1,14 @@
-package reviewtask.generalstep.review_task;
+package team_member.generalstep.review_task;
 
 import org.openqa.selenium.WebDriver;
 
-import reviewtask.driverfactory.DriverFactory;
-import reviewtask.generalfunctions.GeneralAction;
-import reviewtask.generalfunctions.SupportFunction;
-import reviewtask.softassert.SoftAssert;
+import team_member.driverfactory.DriverFactory;
+import team_member.generalfunctions.GeneralAction;
+import team_member.generalfunctions.SupportFunction;
+import team_member.softassert.SoftAssert;
 
 
-public class FillQuestion {
+public class ReviewTask_FillQuestion {
     static WebDriver _driver = DriverFactory.GetDriver();
     public static void FillScoreQuestions(){
         // .ratingDotPoin > span:nth-child(7)

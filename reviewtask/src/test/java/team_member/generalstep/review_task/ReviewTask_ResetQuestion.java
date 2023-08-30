@@ -1,11 +1,11 @@
-package reviewtask.generalstep.review_task;
+package team_member.generalstep.review_task;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;
 
-import reviewtask.generalfunctions.GeneralAction;
-import reviewtask.generalfunctions.SupportFunction;
+import team_member.generalfunctions.GeneralAction;
+import team_member.generalfunctions.SupportFunction;
 
-public class ResetQuestion {
+public class ReviewTask_ResetQuestion {
     public static void RunResetQuestion(){
         GeneralAction.ResetAllQuestion(".btn-outline-danger");
     }

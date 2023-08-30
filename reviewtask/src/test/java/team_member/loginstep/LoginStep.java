@@ -1,14 +1,14 @@
-package reviewtask.loginstep;
+package team_member.loginstep;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
-import reviewtask.driverfactory.DriverFactory;
-import reviewtask.generalfunctions.GeneralAction;
-import reviewtask.generalfunctions.SupportFunction;
-import reviewtask.softassert.SoftAssert;
+import team_member.driverfactory.DriverFactory;
+import team_member.generalfunctions.GeneralAction;
+import team_member.generalfunctions.SupportFunction;
+import team_member.softassert.SoftAssert;
 
 
 public class LoginStep {

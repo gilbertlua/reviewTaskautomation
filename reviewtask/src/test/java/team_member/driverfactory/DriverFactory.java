@@ -1,4 +1,4 @@
-package reviewtask.driverfactory;
+package team_member.driverfactory;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

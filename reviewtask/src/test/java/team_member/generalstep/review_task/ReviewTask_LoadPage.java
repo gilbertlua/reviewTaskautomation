@@ -1,17 +1,17 @@
-package reviewtask.generalstep.review_task;
+package team_member.generalstep.review_task;
 
 
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.openqa.selenium.WebDriver;
 
-import reviewtask.driverfactory.DriverFactory;
-import reviewtask.generalfunctions.GeneralAction;
-import reviewtask.generalfunctions.SupportFunction;
-import reviewtask.softassert.SoftAssert;
+import team_member.driverfactory.DriverFactory;
+import team_member.generalfunctions.GeneralAction;
+import team_member.generalfunctions.SupportFunction;
+import team_member.softassert.SoftAssert;
 
 
-public class LoadPage {
+public class ReviewTask_LoadPage {
     WebDriver _driver = DriverFactory.GetDriver();
     
     public static void LoadReviewPage() {
