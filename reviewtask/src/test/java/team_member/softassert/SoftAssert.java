@@ -1,4 +1,4 @@
-package reviewtask.softassert;
+package team_member.softassert;
 
 public class SoftAssert {
     public static boolean TitleCompare(String expected, String actual){
